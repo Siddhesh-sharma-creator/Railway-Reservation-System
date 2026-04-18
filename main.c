@@ -39,6 +39,10 @@ int countTickets(int id) {
     return count;
 }
 
+// ========================================
+// Ayush Ambetkar: QUEUE OPERATIONS (FULL/EMPTY)
+// ========================================
+
 int isFull() {
     return (front == (rear + 1) % MAX);
 }
