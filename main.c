@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+// ========================================
+// Ayush Ambetkar: QUEUE OPERATIONS (FULL/EMPTY)
+// ========================================
 #define MAX 5
 #define MAX_TICKETS 2
 
