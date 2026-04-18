@@ -93,7 +93,9 @@ void bookTicket() {
 
     printf("\nTicket Booked! Seat No: %d\n", p.seatNo);
 }
-
+// ========================================
+// Aniket Chopde : BOOKING + PRIORITY LOGIC
+// ========================================
 
 void cancelTicket() {
     if (isEmpty()) {
@@ -113,7 +115,9 @@ void cancelTicket() {
         front = (front + 1) % MAX;
     }
 }
-
+// ========================================
+// Aniket Chopde : BOOKING + PRIORITY LOGIC
+// ========================================
 
 void display() {
     if (isEmpty()) {
@@ -157,56 +161,5 @@ int main() {
         }
     }
 }
-// ========================================
-// MEMBER 3: CANCELLATION LOGIC
-// ========================================
 
-// Cancel ticket
-void cancelTicket() {
-    if (isEmpty()) {
-        printf("\nNo reservations to cancel.\n");
-        return;
-    }
-
-    struct Passenger p = queue[front];
-
-    printf("\nCancelled Ticket:\n");
-    printf("ID:%d Name:%s Age:%d Train:%d Seat:%d\n",
-           p.id, p.name, p.age, p.trainNo, p.seatNo);
-
-    if (front == rear) {
-        front = rear = -1;
-    } else {
-        front = (front + 1) % MAX;
-    }
-}
-
-
-// ========================================
-// MEMBER 3: DISPLAY / TRAVERSAL
-// ========================================
-
-// Display
-void display() {
-    if (isEmpty()) {
-        printf("\nNo reservations.\n");
-        return;
-    }
-
-    printf("\nReservations:\n");
-
-    int i = front;
-    while (1) {
-        printf("ID:%d | Name:%s | Age:%d | Train:%d | Seat:%d\n",
-               queue[i].id,
-               queue[i].name,
-               queue[i].age,
-               queue[i].trainNo,
-               queue[i].seatNo);
-
-        if (i == rear)
-            break;
-
-        i = (i + 1) % MAX;
-    }
-}
+     
