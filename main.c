@@ -147,6 +147,10 @@ void display() {
     }
 }
 
+// ========================================
+// VARAD PATIL: MAIN FUNCTION + UI CONTROL
+// ========================================
+
 int main() {
     int choice;
 
@@ -165,22 +169,3 @@ int main() {
         }
     }
 }
-
-   int main() {
-    int choice;
-
-    while (1) {
-        printf("\n--- Railway Reservation System ---\n");
-        printf("1. Book Ticket\n2. Cancel Ticket\n3. Display\n4. Exit\n");
-        printf("Enter choice: ");
-        scanf("%d", &choice);
-
-        switch (choice) {
-            case 1: bookTicket(); break;
-            case 2: cancelTicket(); break;
-            case 3: display(); break;
-            case 4: exit(0);
-            default: printf("Invalid choice!\n");
-        }
-    }
-}  
